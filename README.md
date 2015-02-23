@@ -8,7 +8,7 @@ Animated cards in bootstrap material design.
         http://fezvrasta.github.io/bootstrap-material-design/
 
 
-## Put this in your <head>
+## Put this in your ```html <head> ```
 ```html
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 <link href="material/css/ripples.min.css" rel="stylesheet">

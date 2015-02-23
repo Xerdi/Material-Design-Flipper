@@ -2,10 +2,10 @@
 Animated cards in bootstrap material design.
 
 # Instructions
-    ** Dependencies **
+## Dependencies
 
-        Bootstrap material design
-        [http://fezvrasta.github.io/bootstrap-material-design/]
+Bootstrap material design
+[http://fezvrasta.github.io/bootstrap-material-design/]
 
 
 ## Put this in your ```<head>```

@@ -34,6 +34,7 @@ Animated cards in bootstrap material design.
 Dit is HTML
 ```
 
+## The JavaScript
 ```javascript
 Dit is javascript
 ```

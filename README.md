@@ -14,6 +14,12 @@ Animated cards in bootstrap material design.
 
         <link href="css/flipper.css" rel="stylesheet">
         ```
+
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
 TODO
 # Usage
 TODO

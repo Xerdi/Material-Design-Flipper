@@ -32,9 +32,12 @@ Animated cards in bootstrap material design.
 
 ```html
 <div class="row">
+  <!-- Note the "full-card" class which stands for only one card. Add multiple "full-card" for more cards.  -->
   <div class="col-xs-12 col-md-4 full-card">
+    <!-- This will be the card that is active. Note that there should only be one card active. -->
     <div class="flip-card active-card">
       <div class="card label-info">
+        <!-- The <h6> can also be a <img> which will be centered. -->
         <h6>1</h6>
       </div>
       <a href="javascript:void(0)" class="btn btn-primary btn-fab btn-raised icon-material-replay" id="first"></a>

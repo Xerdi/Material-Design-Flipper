@@ -66,7 +66,7 @@ Animated cards in bootstrap material design.
 </div>
 ```
 
-## The JavaScript
+## How to hook your cards
 ```javascript
 //  Be sure to make a Flipper object first.
 var flipper = new Flipper(document.getElementById("example-row"));

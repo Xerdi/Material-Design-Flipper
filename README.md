@@ -5,10 +5,10 @@ Animated cards in bootstrap material design.
     ** Dependencies **
 
         Bootstrap material design
-        http://fezvrasta.github.io/bootstrap-material-design/
+        [http://fezvrasta.github.io/bootstrap-material-design/]
 
 
-## Put this in your ```html <head> ```
+## Put this in your ```<head>```
 ```html
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 <link href="material/css/ripples.min.css" rel="stylesheet">
@@ -16,7 +16,7 @@ Animated cards in bootstrap material design.
 
 <link href="css/flipper.css" rel="stylesheet">
 ```
-## Put this at the bottom of your <body>
+## Put this at the bottom of your ```<body>```
 ```html
 <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>

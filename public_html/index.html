@@ -6,11 +6,177 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#1a237e">
+
+        <title>Xerdi - Home</title>
+
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="material/css/ripples.min.css" rel="stylesheet">
+        <link href="material/css/material-wfont.min.css" rel="stylesheet">
+
+        <link href="css/flipper.css" rel="stylesheet">
+        
     </head>
     <body>
-        <div>TODO write content</div>
+        
+        <div class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="javascript:void(0)">Xerdi&nbsp;&nbsp;&nbsp;<span class="icon-material-keyboard-arrow-right"></span>&nbsp;&nbsp;&nbsp;Flipper</a>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div id="example-row" class="row">
+                <a href="javascript:void(0)" class="btn btn-default btn-lg btn-block">Example</a>
+                <div class="col-xs-12 col-md-4 full-card">
+                    <div class="flip-card active-card">
+                        <div class="card label-info">
+                            <h6>1</h6>
+                        </div>
+                        <a href="javascript:void(0)" class="btn btn-primary btn-fab btn-raised icon-material-replay" id="first"></a>
+                        <div class="well">
+                            <h1>Card 1</h1>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="card" style="background-color: #F1BF26;color: white;">
+                            <h6>2</h6>
+                        </div>
+                        <div class="well">
+                            <h1>Card 2</h1>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="card alert-success">
+                            <h6>3</h6>
+                        </div>
+                        <div class="well">
+                            <h1>Card 3</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4 full-card">
+                    <div class="flip-card">
+                        <div class="card label-info">
+                            <h6>1</h6>
+                        </div>
+                        <a href="javascript:void(0)" class="btn btn-primary btn-fab btn-raised icon-material-replay" id="second"></a>
+                        <div class="well">
+                            <h1>Card 1</h1>
+                        </div>
+                    </div>
+                    <div class="flip-card active-card">
+                        <div class="card" style="background-color: #F1BF26;color: white;">
+                            <h6>2</h6>
+                        </div>
+                        <div class="well">
+                            <h1>Card 2</h1>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="card alert-success">
+                            <h6>3</h6>
+                        </div>
+                        <div class="well">
+                            <h1>Card 3</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4 full-card">
+                    <div class="flip-card">
+                        <div class="card label-info">
+                            <h6>1</h6>
+                        </div>
+                        <a href="javascript:void(0)" class="btn btn-primary btn-fab btn-raised icon-material-replay" id="third"></a>
+                        <div class="well">
+                            <h1>Card 1</h1>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="card" style="background-color: #F1BF26;color: white;">
+                            <h6>2</h6>
+                        </div>
+                        <div class="well">
+                            <h1>Card 2</h1>
+                        </div>
+                    </div>
+                    <div class="flip-card active-card">
+                        <div class="card alert-success">
+                            <h6>3</h6>
+                        </div>
+                        <div class="well">
+                            <h1>Card 3</h1>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+        
+        <!--    JAVASCRIPT DEPENENCIES      -->
+        
+        <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+        <script src="material/js/ripples.min.js"></script>
+        <script src="material/js/material.min.js"></script>
+        
+        <script src="js/flipper.js"></script>
+        
+        <script>
+            //  First bind the entire row to the flipper!
+            var flipper = new Flipper(document.getElementById("example-row"));
+            
+            $("#first").click(function(e){
+                e.preventDefault();
+                flipper.setCards([{
+                        cardIndex: "0",
+                        activeIndex: "1"
+                    }, {
+                        cardIndex: "1",
+                        activeIndex: "2"
+                    }, {
+                        cardIndex: "2",
+                        activeIndex: "0"
+                }]);
+            });
+            
+            $("#second").click(function(e){
+                e.preventDefault();
+                flipper.setCards([{
+                        cardIndex: "0",
+                        activeIndex: "0"
+                    }, {
+                        cardIndex: "1",
+                        activeIndex: "1"
+                    }, {
+                        cardIndex: "2",
+                        activeIndex: "2"
+                }]);
+            });
+            
+            $("#third").click(function(e){
+                e.preventDefault();
+                flipper.setCards([{
+                        cardIndex: "0",
+                        activeIndex: "2"
+                    }, {
+                        cardIndex: "1",
+                        activeIndex: "0"
+                    }, {
+                        cardIndex: "2",
+                        activeIndex: "1"
+                }]);
+            });
+            
+        </script>
+        
     </body>
 </html>

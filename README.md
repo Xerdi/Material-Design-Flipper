@@ -32,33 +32,33 @@ Animated cards in bootstrap material design.
 
 ```html
 <div class="row">
-<div class="col-xs-12 col-md-4 full-card">
-<div class="flip-card active-card">
-<div class="card label-info">
-<h6>1</h6>
-</div>
-<a href="javascript:void(0)" class="btn btn-primary btn-fab btn-raised icon-material-replay" id="first"></a>
-<div class="well">
-<h1>Card 1</h1>
-</div>
-</div>
-<div class="flip-card">
-<div class="card" style="background-color: #F1BF26;color: white;">
-<h6>2</h6>
-</div>
-<div class="well">
-<h1>Card 2</h1>
-</div>
-</div>
-<div class="flip-card">
-<div class="card alert-success">
-<h6>3</h6>
-</div>
-<div class="well">
-<h1>Card 3</h1>
-</div>
-</div>
-</div>
+  <div class="col-xs-12 col-md-4 full-card">
+    <div class="flip-card active-card">
+      <div class="card label-info">
+        <h6>1</h6>
+      </div>
+      <a href="javascript:void(0)" class="btn btn-primary btn-fab btn-raised icon-material-replay" id="first"></a>
+      <div class="well">
+        <h1>Card 1</h1>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="card" style="background-color: #F1BF26;color: white;">
+        <h6>2</h6>
+      </div>
+      <div class="well">
+        <h1>Card 2</h1>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="card alert-success">
+        <h6>3</h6>
+      </div>
+      <div class="well">
+        <h1>Card 3</h1>
+      </div>
+    </div>
+  </div>
 </div>
 ```
 

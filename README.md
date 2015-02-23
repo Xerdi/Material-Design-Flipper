@@ -26,6 +26,14 @@ Animated cards in bootstrap material design.
 
 <script src="js/flipper.js"></script>
 ```
-TODO
+
 # Usage
-TODO
+## How to make the cards
+
+```html
+Dit is HTML
+```
+
+```javascript
+Dit is javascript
+```

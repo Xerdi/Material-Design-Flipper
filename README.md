@@ -31,10 +31,54 @@ Animated cards in bootstrap material design.
 ## How to make the cards
 
 ```html
-Dit is HTML
+<div class="row" id="example-row">
+  <!-- Note the "full-card" class which stands for only one card. Add multiple "full-card" for more cards.  -->
+  <div class="col-xs-12 col-md-4 full-card">
+    <!-- This will be the card that is active. Note that there should only be one card active. -->
+    <div class="flip-card active-card">
+      <div class="card label-info">
+        <!-- The <h6> can also be a <img> which will be centered. -->
+        <h6>1</h6>
+      </div>
+      <!-- This will be the button to trigger an animation. You will have to hook it yourself! -->
+      <a href="javascript:void(0)" class="btn btn-primary btn-fab btn-raised icon-material-replay" id="first"></a>
+      <div class="well">
+        <h1>Card 1</h1>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="card" style="background-color: #F1BF26;color: white;">
+        <h6>2</h6>
+      </div>
+      <div class="well">
+        <h1>Card 2</h1>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="card alert-success">
+        <h6>3</h6>
+      </div>
+      <div class="well">
+        <h1>Card 3</h1>
+      </div>
+    </div>
+  </div>
+</div>
 ```
 
-## The JavaScript
+## How to hook your cards
 ```javascript
-Dit is javascript
+//  Be sure to make a Flipper object first.
+var flipper = new Flipper(document.getElementById("example-row"));
+
+$('#first').click(function(e) {
+  // make sure you put logical href links for people without javascript
+  e.preventDefault();
+  flipper.setCards([{
+    // there is only one column for this example. add more full cards and then add here dictionaries to switch them.
+    cardIndex: "0",
+    activeIndex: "1"
+  }]);
+});
+
 ```
